@@ -157,7 +157,8 @@ nav ul li:hover{
 /* conteudo principal */
 
 .backgroud{
-    background-color: #2c2c2c;
+    background-color: #2C2C2C;
+    padding: 40px;
 }
 
 .page-inner-content{
@@ -171,7 +172,7 @@ nav ul li:hover{
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 20vh;
+    margin-bottom: 40px;
 }
 
 .container{
@@ -214,7 +215,7 @@ nav ul li:hover{
 }
 
 .card .img2 {
-    width: 300px;
+    width: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +230,7 @@ nav ul li:hover{
 }
 
 .card .img3 {
-    width: 360px;
+    width: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +299,7 @@ nav ul li:hover{
 }
 
 .card .arrow {
-    color: #0F0F0F;
+    color: #000000;
     padding: 10px;
     transform: rotate(-180deg);
     transition: all .5s;
@@ -311,15 +312,3 @@ nav ul li:hover{
 .card .arrow span {
     font-size: 28px;
 }
-
-/* .cols{
-    display: grid;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 4rem 1rem;
-}
-
-.cols-3{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-} */
