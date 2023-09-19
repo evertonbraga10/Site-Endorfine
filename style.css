@@ -8,6 +8,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header */
+
 .header-inner-content{
     max-width: 1300px;
     margin-left: auto;
@@ -30,6 +32,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo{
@@ -108,3 +111,215 @@ nav ul li:hover{
 .header-botton-side-right img{
     width: 115%;
 }
+
+/* media queries */
+
+@media (max-width: 800px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .header-botton-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav{
+        position: absolute;
+        background-color: #0F0F0F;
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+/* header */
+
+/* conteudo principal */
+
+.backgroud{
+    background-color: #2c2c2c;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.page-inner-content h2{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: all .5s;
+}
+
+.card:hover{
+    background-image: radial-gradient(#fff, #c7c7c7)
+}
+
+.card .img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-image: url('img/creatina.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img2 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-image: url('img/whey.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img3 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-image: url('img/pretreino.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card:hover .img, .img2, .img3 {
+    opacity: 1;
+}
+
+.card:hover .img, .img2, .img3 span {
+    font-size: 28px;
+}
+
+.card .content {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 220px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 18px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+    display: flex;
+    text-align: center;
+}
+
+.card .arrow {
+    color: #0F0F0F;
+    padding: 10px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 28px;
+}
+
+/* .cols{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+} */

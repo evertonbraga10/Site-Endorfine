@@ -9,7 +9,7 @@
     <title>Endorfine Suplementos</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
         <div class="header-inner-content">
             <h1 class="logo">ENDORFINE<span>SUPLEMENTOS</span></h1>
             <nav>
@@ -21,17 +21,18 @@
                 </ul>
             </nav>
             <div class="nav-icon-container">
-                <img src="img/sacola-de-compras.png">
-                <img src="img/menu-aberto.png" class="menu-btn">
+                <img src="img/sacola-de-compras.png" />
+                <img src="img/menu-aberto.png" class="menu-btn" />
             </div>
         </div>
     </div>
+
     <header>
         <div class="header-inner-content">
             <div class="header-botton-side">
                 <div class="header-botton-side-left">
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque deleniti eum quod reprehenderi</p>
+                    <h2>Quer alcançar seu obejtivo mais rapido?</h2>
+                    <p>Trabalhamos com as melhores e mais renomadas marcas do mercado, buscando sempre seu melhor desempenho e atender suas expectativas ao oferecer produtos de altíssima qualidade</p>
                 </div>
                 <div class="header-botton-side-right">
                     <img src="img/Suplementos.png" alt="">
@@ -39,5 +40,76 @@
             </div>
         </div>
     </header>
+
+    <!-- conteudo principal -->
+
+    <main>
+
+        <div class="backgroud">
+            <div class="page-inner-content">
+                <h2>CONHEÇA NOSSO TOP3</h2>
+                <div class="container">
+                    <div class="card">
+                        <div class="img"></div>
+    
+                        <div class="content">
+                            <span class="title">CREATINA</span>
+                            <p class="desc">A creatina é um nutriente responsável pela produção de energia que serve as células musculares. Esse tipo de suplementação tem como finalidade ajudar a célula muscular a desempenhar, da melhor maneira, as suas funções durante o treinamento.</p>
+                        </div>
+    
+                        <div class="arrow">
+                            <span>&#8673;</span>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="img2">
+                        </div>
+    
+                        <div class="content">
+                            <span class="title">WHEY PROTEIN</span>
+                            <p class="desc">Além das proteínas e dos aminoácidos, o whey protein tem alta concentração de cálcio, trazendo benefícios para a saúde óssea do corpo. O consumo do suplemento pode ajudar no aumento da força e da massa muscular após a prática de atividades intensas.</p>
+                        </div>
+    
+                        <div class="arrow">
+                            <span>&#8673;</span>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="img3">
+                        </div>
+    
+                        <div class="content">
+                            <span class="title">PRÉ TREINO</span>
+                            <p class="desc">Serve como uma fonte de combustível para que seu corpo tenha energia para realizar uma série de exercícios intensos. Ele ajuda a manter sua energia em alta com muita gordura, proteína, carboidratos, vitaminas e minerais.</p>
+                        </div>
+    
+                        <div class="arrow">
+                            <span>&#8673;</span>
+                        </div>
+                    </div>
+    
+                </div>
+    
+
+                <!-- <div class="cols cols-3">
+                    <img src="img/creatina.png" alt="top1">
+                    <img src="img/whey.png" alt="top2">
+                    <img src="img/pretreino.png" alt="top3">
+                </div> -->
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+       const navbar = document.querySelector(".navbar");
+       const menuButton = document.querySelector(".menu-btn");
+
+       menuButton.addEventListener("click", () => {
+        navbar.classList.toggle("show-menu");
+       });
+    </script>
 </body>
 </html>
