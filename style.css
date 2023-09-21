@@ -330,6 +330,7 @@ main{
 .cols-4{
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
+    text-align: center;
 }
 
 /* .cols-4 img{
@@ -377,4 +378,54 @@ main{
 
 .product-price span{
     font-weight: 600;
+}
+
+footer{
+    background: #2c2c2c;
+    height: 200px;
+}
+
+.info-background{
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+.exclusive-container{
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.exclusive-container img{
+    max-width: 500px;
+}
+
+/* Media queries */
+
+@media (max-width: 800px){
+    .section-title{
+        font-size: 1rem;
+    }
+
+    .container, .card, .img{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .product-name, .product-price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    .exclusive-container{
+        flex-direction: column-reverse;
+    }
+
+    .exclusive-container img{
+        margin-bottom: 4rem;
+    }
 }
