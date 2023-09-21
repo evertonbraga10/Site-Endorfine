@@ -380,11 +380,6 @@ main{
     font-weight: 600;
 }
 
-footer{
-    background: #2c2c2c;
-    height: 200px;
-}
-
 .info-background{
     background-image: radial-gradient(#fff, #c7c7c7);
 }
@@ -428,4 +423,9 @@ footer{
     .exclusive-container img{
         margin-bottom: 4rem;
     }
+}
+
+footer{
+    background: #2c2c2c;
+    height: 200px;
 }
