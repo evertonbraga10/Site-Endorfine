@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Sarala:wght@400;700 & display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Sarala', sans-serif;
 }
 
 /* header */
@@ -21,12 +23,20 @@ header{
     background-image: radial-gradient(#fff, #c7c7c7);
 }
 
+header p{
+    font-weight: 600;
+}
+
 .navbar{
     background-color: #0F0F0F;
     padding: 1rem;
     position: relative;
     top: 0;
     box-shadow: 8px 8px 10px #2c2c2c;
+}
+
+.navbar a{
+    color: inherit;
 }
 
 .navbar>div{
@@ -42,6 +52,7 @@ header{
 
 .logo span{
     color: #24aa03;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav ul{
@@ -58,10 +69,15 @@ nav ul{
 .nav-icon-container img{
     width: 30px;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .nav-icon-container img:first-child{
     margin-right: 1rem;
+}
+
+.nav-icon-container img:hover{
+    transform: translateY(-5px);
 }
 
 nav ul li{
