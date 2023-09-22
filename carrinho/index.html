@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Carrinho de compras</title>
+</head>
+<body>
+    <header>Carrinho de compras</header>
+    <main>
+        <div class="page-title">Seu carrinho</div>
+        <div class="content">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <img src="/img/CREATINA/creatina-hardcore-integralmedica.png" alt="">
+                                    <div class="info">
+                                        <div class="name">Creatina Integral Medica</div>
+                                        <div class="category">Creatina</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 170,99</td>
+                            <td>
+                                <div class="qty">
+                                    <button><i class="fa-solid fa-minus" style="color: #000000;"></i></button>
+                                    <span>2</span>
+                                    <button><i class="fa-solid fa-plus" style="color: #000000;"></i></button>
+                                </div>
+                            </td>
+                            <td>R$ 341,98</td>
+                            <td><button class="remove"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <img src="/img/WHEY/best_whey_900_g_atlhetica.PNG" alt="">
+                                    <div class="info">
+                                        <div class="name">Best Whey</div>
+                                        <div class="category">Whey Protein</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>269,99</td>
+                            <td>
+                                <div class="qty">
+                                    <button><i class="fa-solid fa-minus" style="color: #000000;"></i></button>
+                                    <span>1</span>
+                                    <button><i class="fa-solid fa-plus" style="color: #000000;"></i></button>
+                                </div>
+                            </td>
+                            <td>R$ 269,99</td>
+                            <td><button class="remove"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <img src="/img/DIVERSOS/C4 BETA 1-800x600.png" alt="">
+                                    <div class="info">
+                                        <div class="name">C4 Beta Pump</div>
+                                        <div class="category">Pre-Treino</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 99,90</td>
+                            <td>
+                                <div class="qty">
+                                    <button><i class="fa-solid fa-minus" style="color: #000000;"></i></button>
+                                    <span>1</span>
+                                    <button><i class="fa-solid fa-plus" style="color: #000000;"></i></button>
+                                </div>
+                            </td>
+                            <td>R$ 99,90</td>
+                            <td><button class="remove"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <aside>
+                <div class="box">
+                    <header>Resumo da compra</header>
+                    <div class="informar">
+                        <div><span>Sub total</span>R$ 711,87<span></span></div>
+                        <div><span>Frete</span><span>Gratuito</span></div>
+                        <div><button>Adicionar cupom de desconto <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button></div>
+                    </div>
+                    <footer>
+                        <span>Total</span>
+                        <span>R$ 711,87</span>
+                    </footer>
+                    <button>Finalizar Compra</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
